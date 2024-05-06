@@ -9,11 +9,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Form {
 
-    private String name;
-    private String surname;
-    private String username;
-    private String email;
-    private String password;
+    private String codice;
+    private String titolo;
+    private String genere;
+    private int anno;
+    private int voto;
 
     
 }
