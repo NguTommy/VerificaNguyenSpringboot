@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
     <title>Dettagli utente</title>
 </head>
+
 <body>
     <div class="col-3">
 
@@ -32,7 +33,7 @@
 
         <br>
         <div>
-            <a class="btn btn-primary" th:href="@{/films/svuota/{titolo}}">Elimina film</a>
+            <a class="btn btn-primary" th:href="@{/films/svuota/{film.titolo}}">Elimina film</a>
             <a class="btn btn-primary" th:href="@{/catalogo}">Torna al catalogo</a>
         </div>
     </div>

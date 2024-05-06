@@ -25,6 +25,7 @@ import marconi.com.verifica.services.FilmService;
 
 
 @Controller
+//ricerca a localhost:8090
 @RequestMapping("/")
 public class FilmController {
 
@@ -50,6 +51,7 @@ public class FilmController {
             filmService.clearFilms();
             ModelAndView modelAndView = new ModelAndView("redirect:/");
             modelAndView.addObject("messaggio", "Catalogo svuotato con successo.");
+          
             return modelAndView;
         } else {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Pagina non trovata!");
